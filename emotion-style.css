@@ -1,0 +1,53 @@
+@font-face {
+	font-family: 'fonts/Edmondsans-Bold';
+	src:
+		url('css/Edmondsans-Bold.otf');
+}
+
+@font-face {
+	font-family: 'fonts/Edmonsans-Regular';
+	src:
+		url('css/Edmonsans-Regular.otf');
+}
+
+nav {
+	padding-top: 350px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+a {
+  font-family: Edmondsans-Bold, sans-serif;
+  text-transform: none;
+  text-decoration: none;
+  font-size: 80px;
+}
+
+#excited {
+  color: #f7546c;
+}
+
+.eBgOne {
+	background-color: yellow;
+}
+
+.eBgTwo {
+	background-color: orange;
+}
+
+.eBgThree {
+	background-color: fuchsia;
+}
+
+
+#relaxed {
+  color: #a3d8c9;
+}
+
+#stressed {
+  color: #ffec39;
+}
+
+#grieved {
+  color: #63a6ba;
+}
