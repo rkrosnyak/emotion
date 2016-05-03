@@ -1,13 +1,17 @@
 @font-face {
 	font-family: 'fonts/Edmondsans-Bold';
 	src:
-		url('css/Edmondsans-Bold.otf');
+		url('fonts/Edmondsans-Bold.otf'),
+		url('fonts/Edmondsans-Bold.eot'),
+		url('fonts/Edmondsans-Bold.woff'),;
 }
 
 @font-face {
 	font-family: 'fonts/Edmonsans-Regular';
 	src:
-		url('css/Edmonsans-Regular.otf');
+		url('fonts/Edmonsans-Regular.otf'),
+		url('fonts/Edmonsans-Regular.eot'),
+		url('fonts/Edmonsans-Regular.woff');
 }
 
 .main {
@@ -21,6 +25,12 @@ a {
   text-transform: none;
   text-decoration: none;
   font-size: 80px;
+	transition-property: opacity;
+  transition-duration: 1s;
+}
+
+a:hover {
+	opacity: 0.2;
 }
 
 #pick{
@@ -104,6 +114,22 @@ img {
 	margin-right: 150px;
 }
 
+#circleOne:hover, #circleTwo:hover {
+	opacity: 0.5;
+}
+
+.selected {
+  animation: selected 2s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes selected {
+	0% {opacity: 1;}
+	50% {opacity: 0.2;}
+	100% {opacity: 1;}
+}
+
 /*animation styles*/
 
 .animation {
@@ -155,6 +181,8 @@ img {
   animation: grieved 10s;
   animation-iteration-count: 1;
   animation-play-state: running;
+	animation-fill-mode:forwards;
+	animation-timing-function:linear;
 }
 
 @keyframes grieved {

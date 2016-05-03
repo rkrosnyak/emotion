@@ -47,10 +47,14 @@ $(document).ready(function() {
         $('.stickyNav').fadeIn(2000);
         $('.circles').fadeIn(2000);
         $(circleOne).on('click', function(){
+          $(circleTwo).removeClass('selected');
+          $(this).addClass('selected');
           songTwo.pause();
           playSongOne();
         });
         $(circleTwo).on('click', function(){
+          $(circleOne).removeClass('selected');
+          $(this).addClass('selected');
           songOne.pause();
           playSongTwo();
         });
